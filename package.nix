@@ -5,7 +5,6 @@
   path,
   nix,
   coreutils,
-  nixos-install-tools,
   binlore,
   diskoVersion,
   stdenv,
@@ -50,7 +49,6 @@ let
                 nix
                 coreutils
               ]
-              ++ lib.optional (!stdenv.isDarwin) nixos-install-tools
             )
           }
       done
